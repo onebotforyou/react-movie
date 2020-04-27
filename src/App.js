@@ -4,6 +4,7 @@ import Router from "./routing/router";
 import LoadingBar from 'react-top-loading-bar'
 import store from "./store";
 import { setLoadingBarProgress } from "./actions";
+require("dotenv").config();
 
 export default class App extends Component {
   constructor(props) {
