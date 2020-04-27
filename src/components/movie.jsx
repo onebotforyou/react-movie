@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { getGenresByID } from "../services/moviesService";
 import { Link } from "react-router-dom";
 
 class Movie extends Component {
@@ -28,7 +27,7 @@ class Movie extends Component {
 
       <h1 className="movie-title">{movie.title}</h1>
       <p className="movie-genre">
-        {getGenresByID(movie.genre_ids).map(g => (
+        {(movie.genre_ids).map(g => (
           <span key={g.id}> {g.name} </span>
         ))}
       </p>
@@ -58,7 +57,7 @@ class Movie extends Component {
         </Link>
         <br />
         <p className="movie-genre movie-genre-list">
-          {getGenresByID(movie.genre_ids).map(g => (
+          {(movie.genre_ids).map(g => (
             <span key={g.id}> {g.name} </span>
           ))}
         </p>
