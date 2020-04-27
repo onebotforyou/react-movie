@@ -104,7 +104,35 @@ export function getGenresByID(ids) {
   return data
 }
 
+export function getPopular(page) {
+  return new Promise((resolve, reject) => {
+    fetch(
+      `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=${page}`
+    )
+      .then(res => res.json())
+      .then(json => {
+        resolve(json)
+      })
+      .catch(err => {
+        reject(err)
+      })
+  })
+}
 
+export function getTopRated(page) {
+  return new Promise((resolve, reject) => {
+    fetch(
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&page=${page}`
+    )
+      .then(res => res.json())
+      .then(json => {
+        resolve(json)
+      })
+      .catch(err => {
+        reject(err)
+      })
+  })
+}
 
 export function getDetailedMovie(movieID) {
   return new Promise((resolve, reject) => {

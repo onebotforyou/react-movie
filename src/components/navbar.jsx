@@ -4,7 +4,8 @@ import { NavLink } from 'react-router-dom'
 const NavBar = props => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
     <NavLink className="navbar-brand" to="/">
-      React-Movie
+     
+      React-Movies
     </NavLink>
     <button
       className="navbar-toggler"
@@ -22,7 +23,7 @@ const NavBar = props => (
         <NavLink exact className="navitem nav-link" to="/">
           Home
         </NavLink>
-     
+    
       </ul>
     </div>
   </nav>

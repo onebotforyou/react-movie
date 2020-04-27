@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch, Redirect, Router } from 'react-router-dom'
 import Movies from '../components/movies'
+
 import NotFound from '../components/notFound'
 import DetailedMovie from '../components/detailedMovie'
 

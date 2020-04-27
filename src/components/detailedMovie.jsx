@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import queryString from 'query-string'
-import { getDetailedMovie } from '../services/moviessService'
+import { getDetailedMovie } from '../services/moviesService'
 import {endTheBar, beginTheBar} from '../services/loadingBarService'
 
 class DetailedMovie extends Component {

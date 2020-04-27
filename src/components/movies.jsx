@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { searchMovie } from "../services/moviessService";
+import { searchMovie } from "../services/moviesService";
 import Movie from "./movie";
 import Pagination from "./pagination";
 import ListOrGrid from "./listOrGrid";
